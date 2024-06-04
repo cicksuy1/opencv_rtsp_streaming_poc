@@ -1,0 +1,1 @@
+appsrc is-live=true ! nvvidconv ! video/x-raw(memory:NVMM),format=(string)NV12, framerate=(fraction)10/1  ! nvv4l2h264enc maxperf-enable=true bitrate=400000 num-B-Frames=0 ! h264parse ! rtspclientsink protocols=tcp name=s location=rtsp://localhost:8554/0

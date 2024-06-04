@@ -1,0 +1,1 @@
+decklinkvideosrc device-number=0 mode=25 ! videoconvert ! videocrop bottom=16 ! video/x-raw, format=RGBA, width=3840, height=2144 ! appsink max-buffers=1 drop=True
